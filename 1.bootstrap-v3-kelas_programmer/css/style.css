@@ -1,0 +1,43 @@
+/* navbar */
+.navbar {
+    background-color: rgb(28, 34, 48);
+}
+.navbar .navbar-header a {
+    color: rgb(197, 193, 193);
+}
+.navbar .navbar-collapse ul li {
+    display: inline-block;
+    margin: 8px;
+    z-index: 20;
+}
+.navbar .navbar-collapse ul li a {
+    color: white;
+}
+.navbar .navbar-right {
+    margin-top: -50px;
+    z-index: 1;
+}
+
+/* jumbotron */
+.jumbotron {
+    padding-top: 100px;
+}
+.jumbotron h1 {
+    font-size: 40px;
+}
+.jumbotron p {
+    font-size: 16px;
+}
+
+
+/* daftar-kelas */
+.daftar-kelas .thumbnail {
+    border: 0px solid black;
+}
+.daftar-kelas .caption h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.daftar-kelas {
+    margin-bottom: 50px;
+}
