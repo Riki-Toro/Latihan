@@ -7,13 +7,92 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!-- my css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <style>
+            .kotak {
+                width: 90%;
+                height: 90%;
+                margin: auto;
+            }
+            .col-sm-6 img {
+                float: right;
+            }
+        </style>
 
         <title>codesk</title>
     </head>
     <body>
 
-        <div class="kotak">
-            
+        <div class="kotak m-5 p-3 bg-dark text-primary">
+            <!-- awal navbar -->
+            <div class="container bg-light px-5 py-3">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <a class="navbar-brand" href="#">Codesk</a>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><span>Home</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Our Stories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> | </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Get Started</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="form-inline">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sign In</button>
+                        <div class="p-3">
+                            <a href=""><i class="fas fa-search"></i></a>
+                        </div>
+                    </form>
+                </nav>
+            </div>
+            <!-- akhir navbar -->
+
+            <div class="container bg-light">
+                <div class="row">
+                    <div class="col-sm-6 pl-5">
+                        <h1>PROJECT</h1>
+                        <h1>MANAGEMENT</h1>
+
+                        <h4>Time to get organised</h4>
+                        <hr>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus recusandae consequuntur, accusantium maxime dolor debitis unde. Et voluptatum eum, maiores minus molestiae excepturi dicta labore! Qui consequatur labore voluptatum!</p>
+                        <br>
+                        <div class="button">
+                            <button class="btn btn-primary my-2 my-sm-0" type="submit">Get Started</button>
+                            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Read Our Stories</button>
+                        </div>
+
+                        <div class="my-4">
+                            <a href="#"><i class="fab fa-facebook-f p-2"></i></a>
+                            <a href="#"><i class="fab fa-instagram p-2"></i></a>
+                            <a href="#"><i class="fab fa-twitter p-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pl-5">
+                        <img src="asset/vektor.png" width="450px" height="550px">
+                    </div>
+                </div>
+            </div>
         </div>
 
 
