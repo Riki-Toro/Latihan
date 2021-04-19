@@ -16,18 +16,21 @@
             }
             .kotak {
                 width: 450px;
-                height: 500px;
-                margin: 35px auto;
-                box-shadow: 0px 0px 4px black;
+                height: 510px;
+                margin: 30px auto;
+                box-shadow: 0px 0px 3px black;
             }
             .kotak .input .panjang {
-                width: 355px;
+                width: 357px;
                 height: 42px;
             }
             .forget {
                 display: block;
                 text-align: center;
                 margin-top: 15px;
+            }
+            .kotak .footer {
+                font-size: 14px;
             }
         </style>
     </head>
@@ -43,13 +46,17 @@
             <h6>Let's join us :)</h6>
             <div class="input mt-4">
                 <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" class="panjang mb-2">
+                <input type="email" id="email" name="email" class="panjang mb-2" autofocus autocomplete="off">
                 <br>
                 <label for="password">Password</label><br>
-                <input type="password" id="password" name="password" class="mb-3 panjang"><br><br>
+                <input type="password" id="password" name="password" class="panjang mb-2"><br>
+                <!-- remember me -->
+                <input type="checkbox" id="remember" name="remember"> <label for="remember" class="mb-3">Remember me</label>
                 <button type="button" class="btn btn-primary panjang">LOGIN</button>
             </div>
             <a href="#" class="forget">Forget your password?</a>
+
+            <p class="footer mt-5 text-light text-center">&copy Copyright 2021 | <i class="fab fa-github"></i> <a href="https://github.com/Riki-Toro" target="_blank" class="text-primary">Riki-Toro</a>  |  <i class="fab fa-instagram"> @karya_rw</i></p>
         </div>
 
         <!-- Optional JavaScript -->
