@@ -9,19 +9,60 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <!-- my css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <style>
-            .jumbotron {
-                background-image: none;
+            .navbar img {
+                width: 120px;
             }
+            .jumbotron {
+                background-image: url(img/aa.jpeg);
+                background-size: cover;
+                background-position: 0px -20px;
+                padding: 88px 0px;
+                position: relative;
+            }
+            /* .jumbotron::after {
+                content: '';
+                display: block;
+                width: 50%;
+                height: 100%;
+                background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0));
+                position: absolute;
+                bottom: 0;
+                z-index: 1;
+            } */
             .jumbotron .isi {
                 width: 35%;
             }
             .jumbotron .isi h1 {
                 font-weight: 500;
                 font-size: 35px;
+                color: white;
             }
             .jumbotron .isi p {
                 font-size: 11px;
+                color: white;
+            }
+            .isi .card {
+                line-height: 15px;
+                margin-top: -14px;
+                margin-bottom: 8px;
+            }
+            .isi .card h5 {
+                font-size: 14px;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            .isi .card p {
+                font-size: 10px;
+                margin-bottom: 5px;
+            }
+            .isi .card a {
+                font-size: 10px;
+            }
+            .footer {
+                font-size: 12px;
+                font-family: Arial, Helvetica, sans-serif;
             }
         </style>
 
@@ -31,14 +72,14 @@
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#">Microsoft</a>
+                <a class="navbar-brand" href="#"><img src="img/microsoft.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item mx-3">
+                        <li class="nav-item mr-3">
                             <a class="nav-link" href="#">Office<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item mr-3">
@@ -54,16 +95,19 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Lebih</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Mackbook Pro</a>
+                                <a class="dropdown-item" href="#">IPhone</a>
+                                <a class="dropdown-item" href="#">IPad</a>
+                                <a class="dropdown-item" href="#">IWatch</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Cari di Microsoft.com" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Masuk</button>
+                        <input class="form-control mr-sm-3" type="search" placeholder="Cari di Microsoft.com" aria-label="Search">
+                        <a href="#"><i class="fas fa-shopping-cart mr-3"></i></a>
+                        <button class="btn btn-outline my-2 my-sm-0" type="submit">Masuk</button>
                     </form>
                 </div>
             </div>
@@ -77,23 +121,54 @@
                     <h1 class="display-4">Apa yang akan Anda lakukan?</h1>
                     <p class="lead">Office 365 membuka potensi perangkat Anda serta menghasilkan yang terbaik dalam diri Anda.</p>
                     <p class="lead">
-                        <a class="btn-light p-2" href="#" role="button">DAPATKAN OFFICE 365 ></a>
+                        <a class="btn-light p-2" href="#" role="button">DAPATKAN OFFICE 365 <i class="fas fa-chevron-right"></i></a>
                     </p>
                 </div>
             </div>
         </div>
 
+
         <!-- isi -->
         <div class="container">
             <div class="isi">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-3">
                         <div class="card">
-                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <img class="card-img-top" src="img/1.JPG" alt="satu">
                             <div class="card-body">
                                 <h5 class="card-title">Bursa Microsoft</h5>
                                 <p class="card-text">Temukan yang Anda butuhkan untuk rumah, sekolah, kantor, dan bersenang-senang.</p>
-                                <a href="#">BELANJA DI MICROSOFT STORE ></a>
+                                <a href="#">BELANJA DI MICROSOFT STORE <i class="fas fa-chevron-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/2.jpg" alt="dua">
+                            <div class="card-body">
+                                <h5 class="card-title">Outlook</h5>
+                                <p class="card-text">Aplikasi email gratis untuk iOS, Android, dan Windows.</p>
+                                <a href="#">DAPATKAN APLIKASI EMAIL OUTLOOK <i class="fas fa-chevron-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/3.jpg" alt="tiga">
+                            <div class="card-body">
+                                <h5 class="card-title">OneNote</h5>
+                                <p class="card-text">Kelola catatan dalam hidup Anda.</p>
+                                <a href="#">UNDUK ONE NOTE SECARA GRATIS <i class="fas fa-chevron-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/4.jpg" alt="empat">
+                            <div class="card-body">
+                                <h5 class="card-title">Sway</h5>
+                                <p class="card-text">Menghidupkan ide Anda di web dengan mudah.</p>
+                                <a href="#">MEMULAI DENGAN SWAY <i class="fas fa-chevron-right"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -102,7 +177,10 @@
         </div>
 
 
-
+        <!-- footer -->
+        <footer class="footer">
+            <p class="footer mt-3 text-center">&copy Copyright 2021 | Riki Widiantoro | <i class="fab fa-github"></i> <a href="https://github.com/Riki-Toro" target="_blank" class="text-primary">Riki-Toro</a>  |  <i class="fab fa-instagram"> @karya.rw</i></p>
+        </footer>
 
 
 
