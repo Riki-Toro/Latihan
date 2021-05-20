@@ -12,13 +12,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <style>
             .navbar img {
-                width: 120px;
+                width: 110px;
             }
             .jumbotron {
                 background-image: url(img/aa.jpeg);
                 background-size: cover;
-                background-position: 0px -20px;
-                padding: 88px 0px;
+                padding: 100px 0px;
                 position: relative;
             }
             /* .jumbotron::after {
@@ -35,34 +34,64 @@
                 width: 35%;
             }
             .jumbotron .isi h1 {
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 35px;
                 color: white;
             }
             .jumbotron .isi p {
                 font-size: 11px;
+                font-weight: 400;
                 color: white;
             }
             .isi .card {
                 line-height: 15px;
-                margin-top: -14px;
-                margin-bottom: 8px;
+                margin-top: -5px;
+                margin-bottom: 3px;
+                border: none;
             }
             .isi .card h5 {
                 font-size: 14px;
                 font-weight: 700;
+                margin-top: -10px;
                 margin-bottom: 5px;
+                margin-left: -20px;
+                margin-right: -20px;
             }
             .isi .card p {
                 font-size: 10px;
                 margin-bottom: 5px;
+                margin-left: -20px;
+                margin-right: -20px;
             }
             .isi .card a {
                 font-size: 10px;
+                margin-left: -20px;
+                margin-right: -20px;
             }
             .footer {
                 font-size: 12px;
                 font-family: Arial, Helvetica, sans-serif;
+            }
+            @media (max-width: 575.98px) {
+                .jumbotron {
+                    text-align: center;
+                }
+                .jumbotron .isi {
+                    width: 80%;
+                }
+                .jumbotron .isi h1 {
+                    font-weight: 600;
+                    font-size: 26px;
+                    color: white;
+                }
+                .jumbotron .isi p {
+                    font-size: 10px;
+                    font-weight: 400;
+                    color: white;
+                }
+                .footer {
+                    font-size: 10px;
+                }
             }
         </style>
 
@@ -106,8 +135,8 @@
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-3" type="search" placeholder="Cari di Microsoft.com" aria-label="Search">
-                        <a href="#"><i class="fas fa-shopping-cart mr-3"></i></a>
-                        <button class="btn btn-outline my-2 my-sm-0" type="submit">Masuk</button>
+                        <a href="#"><i class="fas fa-shopping-cart mr-3 text-dark"></i></a>
+                        <a href="#" class="btn btn-outline masuk text-dark">Masuk</a>
                     </form>
                 </div>
             </div>
@@ -132,7 +161,7 @@
         <div class="container">
             <div class="isi">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-sm-3">
                         <div class="card">
                             <img class="card-img-top" src="img/1.JPG" alt="satu">
                             <div class="card-body">
@@ -142,7 +171,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-3">
                         <div class="card">
                             <img class="card-img-top" src="img/2.jpg" alt="dua">
                             <div class="card-body">
@@ -152,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-3">
                         <div class="card">
                             <img class="card-img-top" src="img/3.jpg" alt="tiga">
                             <div class="card-body">
@@ -162,7 +191,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-3">
                         <div class="card">
                             <img class="card-img-top" src="img/4.jpg" alt="empat">
                             <div class="card-body">
@@ -179,7 +208,7 @@
 
         <!-- footer -->
         <footer class="footer">
-            <p class="footer mt-3 text-center">&copy Copyright 2021 | Riki Widiantoro | <i class="fab fa-github"></i> <a href="https://github.com/Riki-Toro" target="_blank" class="text-primary">Riki-Toro</a>  |  <i class="fab fa-instagram"> @karya.rw</i></p>
+            <p class="footer text-center">&copy Copyright 2021 | Riki Widiantoro | <i class="fab fa-github"></i> <a href="https://github.com/Riki-Toro" target="_blank" class="text-primary">Riki-Toro</a>  |  <i class="fab fa-instagram"> @karya.rw</i></p>
         </footer>
 
 
