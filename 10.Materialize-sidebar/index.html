@@ -47,13 +47,14 @@
             <li><a href="" class="blue-grey-text text-lighten-4">Services</a></li>
         </ul>
 
-        <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
+        <ul id='dropdown1' class='dropdown-content N/A transparent'>
+            <li></li>
+            <li><a href="">Work 1</a></li>
+            <li><a href="">Work 2</a></li>
             <li class="divider" tabindex="-1"></li>
-            <li><a href="#!">three</a></li>
-            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+            <li><a href="">Work 3</a></li>
+            <li><a href=""><i class="material-icons">view_module</i>four</a></li>
+            <li><a href=""><i class="material-icons">cloud</i>five</a></li>
         </ul>
 
         <!--JavaScript at end of body for optimized loading-->
@@ -61,8 +62,10 @@
         <script>
             const sidenav = document.querySelectorAll('.sidenav');
             M.Sidenav.init(sidenav);
-            // $(document).ready(function(){
-            // $('.sidenav').sidenav();
+            
+            const dropdown = document.querySelectorAll('.dropdown-trigger');
+            M.Dropdown.init(dropdown);
+            M.Dropdown.getInstance(dropdown);
         </script>
     </body>
 </html>
