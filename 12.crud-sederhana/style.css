@@ -19,7 +19,9 @@ h1 {
 
 .data {
     margin: auto;
+    border: 1px solid black;
 }
-.data th {
-    margin-right: 10px;
+
+table th {
+    padding: 10px 40px;
 }
