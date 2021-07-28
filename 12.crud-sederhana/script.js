@@ -18,6 +18,21 @@ function buatBaris(nama, email, alamat) {
 
 }
 
+
+
+
+function buatTombolHapus(buttonTypeClass, eventListener) {
+    const button = document.createElement('input');
+    button.setAttribute('type', 'submit');
+    button.setAttribute('value', 'Hapus');
+    button.classList.add(buttonTypeClass);
+    button.addEventListener('click', function(event) {
+        eventListener(event);
+    });
+    return button;
+}
+
+
 tombol.addEventListener('click', function(event) {
     event.preventDefault();
 
