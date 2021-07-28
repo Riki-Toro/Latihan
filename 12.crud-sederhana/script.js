@@ -10,8 +10,11 @@ function buatBaris(nama, email, alamat) {
     inputEmail.append(email);
     inputAlamat.append(alamat);
 
+    const divAksi = document.createElement('div');
+    divAksi.append(hapusData(), editData());
+
     const tr = document.createElement('tr');
-    tr.append(inputNama, inputEmail, inputAlamat, hapusData());
+    tr.append(inputNama, inputEmail, inputAlamat, divAksi);
 
     const tabel = document.querySelector('.data');
     tabel.append(tr);
@@ -22,12 +25,14 @@ function buatBaris(nama, email, alamat) {
 
 function hapusData() {
     return buatTombolHapus('red', function(event) {
-        hapusSelesai(event.target.parentElement);
+        hapusSelesai(event.target.parentElement.parentElement);
     });
 }
-
-
-
+function editData() {
+    return buatTombolEdit('green', function(event) {
+        edit(event.target.parentElement.parentElement);
+    });
+}
 
 function buatTombolHapus(buttonTypeClass, eventListener) {
     const button = document.createElement('input');
@@ -39,6 +44,28 @@ function buatTombolHapus(buttonTypeClass, eventListener) {
     });
     return button;
 }
+function buatTombolEdit(buttonTypeClass, eventListener) {
+    const button = document.createElement('input');
+    button.setAttribute('type', 'submit');
+    button.setAttribute('value', 'Edit');
+    button.classList.add(buttonTypeClass);
+    button.addEventListener('click', function(event) {
+        eventListener(event);
+    });
+    return button;
+}
+
+function hapusSelesai(taskElement) {
+    taskElement.remove();
+}
+function edit(taskElement) {
+    taskElement.remove();
+}
+
+
+
+
+
 
 
 tombol.addEventListener('click', function(event) {
@@ -53,11 +80,3 @@ tombol.addEventListener('click', function(event) {
     buatBaris(nama, email, alamat);
 });
 
-
-
-
-
-
-function hapusSelesai(taskElement) {
-    taskElement.remove();
-}
