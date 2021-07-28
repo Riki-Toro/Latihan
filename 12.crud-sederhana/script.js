@@ -11,11 +11,19 @@ function buatBaris(nama, email, alamat) {
     inputAlamat.append(alamat);
 
     const tr = document.createElement('tr');
-    tr.append(inputNama, inputEmail, inputAlamat);
+    tr.append(inputNama, inputEmail, inputAlamat, hapusData());
 
     const tabel = document.querySelector('.data');
     tabel.append(tr);
 
+}
+
+
+
+function hapusData() {
+    return buatTombolHapus('red', function(event) {
+        hapusSelesai(event.target.parentElement);
+    });
 }
 
 
@@ -44,3 +52,12 @@ tombol.addEventListener('click', function(event) {
 
     buatBaris(nama, email, alamat);
 });
+
+
+
+
+
+
+function hapusSelesai(taskElement) {
+    taskElement.remove();
+}

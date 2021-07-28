@@ -16,6 +16,15 @@ h1 {
 
 
 
+.red {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid red;
+}
+
+
+
 
 .data {
     margin: auto;
