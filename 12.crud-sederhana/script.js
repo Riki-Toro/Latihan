@@ -57,9 +57,11 @@ function buatTombolEdit(buttonTypeClass, eventListener) {
 
 function hapusSelesai(taskElement) {
     taskElement.remove();
+    alert('Data berhasil dihapus!');
 }
 function edit(taskElement) {
     taskElement.remove();
+    
 }
 
 
