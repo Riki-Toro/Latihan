@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    margin-top: 50px;
+}
+p {
+    font-size: 9px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+.tombol {
+    color: white;
+    background-color: teal;
+    border: 1px solid teal;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.tombol:hover {
+    cursor: pointer;
+    background-color: rgb(0, 99, 99);
+}
+
+table {
+    width: 200px;
+    margin: 20px auto;
+}

@@ -5,91 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List Sederhana</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .container {
-            margin-top: 50px;
-        }
-        .tombol {
-            color: white;
-            background-color: teal;
-            border: 1px solid teal;
-            border-radius: 5px;
-            padding: 2px 5px;
-        }
-        .tombol:hover {
-            cursor: pointer;
-            background-color: rgb(0, 99, 99);
-        }
-
-        table {
-            width: 200px;
-            margin: 20px auto;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container" align="center">
         <h2>To Do List Sederhana</h2>
+        <p>dibuat oleh : Riki Widiantoro</p>
         <input type="text" placeholder="ketikan list di sini!..." id="input" required>
         <input type="submit" value="Tambah List" class="tombol">
     </div>
-<!-- 
-    <div class="list">
-        <ul class="ul-list">
-            
-        </ul>
-    </div> -->
-    <table>
 
-    </table>
+    <table></table>
 
-    <script>
-        const tombol = document.querySelector('.tombol');
-        
-        function buatList(input) {
-            const table = document.querySelector('table');
-            const tr = document.createElement('tr');
-            const td = document.createElement('td');
-            
-            const inputToDo = document.createElement('td');
-            inputToDo.append(input);
-            // td.append(tombolHapus());
-            table.append(tr);
-            tr.append(inputToDo, tombolHapus());
-            
-        }
-
-        function tombolHapus() {
-            return buatSelesai(function(event) {
-                clear(event.target.parentElement);
-            });
-        }
-        function buatSelesai(eventListener) {
-            const btn = document.createElement('input');
-            btn.setAttribute('value', 'hapus');
-            btn.setAttribute('type', 'submit');
-            btn.addEventListener('click', function(event) {
-                eventListener(event);
-            });
-            return btn;
-        }
-        function clear(element) {
-            element.remove();
-        }
-
-
-
-        tombol.addEventListener('click', function() {
-            let input = document.getElementById('input').value;
-            
-            buatList(input);
-
-            input = " ";
-        });
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
