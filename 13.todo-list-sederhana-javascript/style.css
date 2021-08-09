@@ -9,6 +9,9 @@ p {
     margin-bottom: 30px;
     margin-top: -10px;
 }
+#input {
+    padding: 3px;
+}
 .tombol {
     color: white;
     background-color: teal;
