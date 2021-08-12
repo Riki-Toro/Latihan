@@ -13,14 +13,15 @@ function buatList(input) {
 }
 
 function tombolHapus() {
-    return buatSelesai(function(event) {
+    return buatSelesai('red', function(event) {
         clear(event.target.parentElement);
     });
 }
-function buatSelesai(eventListener) {
+function buatSelesai(buttontypeclass, eventListener) {
     const btn = document.createElement('input');
     btn.setAttribute('value', 'hapus');
     btn.setAttribute('type', 'submit');
+    btn.classList.add(buttontypeclass);
     btn.addEventListener('click', function(event) {
         eventListener(event);
     });
